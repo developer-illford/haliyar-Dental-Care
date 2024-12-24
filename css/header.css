@@ -1,0 +1,253 @@
+/* GLOBAL DECLARATIONS */
+* {
+    /* border: 1px solid red; */
+    font-family: "Poppins", sans-serif;
+}
+
+.body {
+    margin: 0;
+}
+
+
+/* the color pallette*/
+:root {
+    --primary_purple: #950051;
+    /* purple */
+    --primary_white: #ffff;
+    /* white */
+    --secondary_dark_purple: #2D2D2D;
+    /* dark purple */
+    --secondary_light_gray: #787878;
+    /* light Gray */
+    --secondary_dark_gray: #232323;
+    /* dark Gray */
+    --default_font: #0000;
+    /* font black */
+    --default_font_a: #ffff;
+    /*font white*/
+
+
+    --dark_purple_right: linear-gradient(to right, #2D2D2D, #950051);
+    /* dark to purple */
+    --dark_purple_left: linear-gradient(to left, #2D2D2D, #950051);
+    /* dark to purple */
+    --dark_purple_bottom: linear-gradient(to bottom, #2D2D2D, #950051);
+    /* dark to purple */
+    --dark_purple_top: linear-gradient(to top, #2D2D2D, #950051);
+    /* dark to purple */
+}
+
+.default_bold {
+    font-weight: bold;
+}
+
+
+/* SECTION 1 OF HEADER */
+
+.header_navbar-top {
+    width: 100%;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: var(--dark_purple_right);
+    color: var(--primary_white);
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.header_navbar-top_column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_navbar-top_column img {
+    padding: 1%;
+    width: 32px;
+}
+
+.header_navbar-top_elements {
+    color: var(--primary_white);
+    width: 100%;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.header_navbar-top_elements a {
+    text-decoration: none;
+    color: var(--primary_white);
+    font-size: 12px;
+}
+
+.header-navbar-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navbar-top-right img {
+    width: 27px;
+}
+
+.header-navbar {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.navbar-brand img {
+    height: auto;
+    width: 13rem;
+}
+
+
+
+.header-navbar li>a {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondary_dark_gray);
+}
+
+.navbar-collapse-left {
+    justify-content: space-evenly;
+}
+
+.header-navbar .btn {
+
+    width: 13rem;
+    height: 3rem;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 18px;
+    border-width: revert;
+}
+
+.header-navbar .btn:hover {
+    color: var(--primary_white);
+}
+
+.navbar-collapse {
+    justify-content: space-around;
+
+}
+
+.navbar-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* .nav-link a{
+display: flex;
+justify-content: space-between;
+} */
+
+
+
+.navbar-expand-sm {
+    height: auto;
+    padding-top: 0%;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary_purple) !important;
+    color: black !important;
+}
+
+
+
+.header-navbar .nav-link:hover {
+    color: var(--primary_purple);
+}
+
+.header-navbar .nav-item .nav-link.active {
+    color: var(--primary_purple);
+}
+
+
+
+.btn-outline-primary:hover {
+    background-image: var(--dark_purple_right); 
+    color: var(--primary_white) !important;
+    background-image: var(--dark_purple_right);
+    color: var(--primary_white) !important;
+}
+
+/* @media only screen and (max-width: 1049.98px) {
+    .header_navbar-top{
+        display: none;
+    }
+    .navbar-collapse{
+        justify-content:space-around;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+} */
+
+
+
+/* Update your existing CSS */
+@media (max-width: 1049.98px) {
+    .navbar-brand img {
+        height: auto;
+        width: 8rem;
+    }
+
+    .header_navbar-top {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary_white);
+        z-index: 1000;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-header-btn {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        padding: 2rem;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+
+    .navbar-brand img {
+        height: auto;
+        width: 5rem;
+    }
+}
+
+
+/* @media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary_white);
+        z-index: 1000;
+    }
+    .navbar-collapse.show {
+        display: block;
+    }
+} */
